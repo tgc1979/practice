@@ -1,6 +1,6 @@
 make.exe --dry-run --always-make --keep-going --print-directory
-make: Entering directory '/c/Users/Toshiba/OneDrive/Belgeler/tugrul/c/deposit'
-make: Leaving directory '/c/Users/Toshiba/OneDrive/Belgeler/tugrul/c/deposit'
+make: Entering directory '/c/Users/Toshiba/Documents/practice/SafeDeposit'
+make: Leaving directory '/c/Users/Toshiba/Documents/practice/SafeDeposit'
  
 make: *** No targets specified and no makefile found.  Stop.
 

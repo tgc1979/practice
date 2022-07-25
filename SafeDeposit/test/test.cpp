@@ -6,7 +6,7 @@
 int main()
 {
 
-    SafeDeposit safe(13, 7, 10);
+    SafeDeposit safe(5, 7, 10);
     Valuable *item = new Valuable("key", 10);
     assert(safe.add(*item));
     assert(safe.add(*item));
