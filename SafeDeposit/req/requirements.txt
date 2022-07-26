@@ -1,3 +1,5 @@
+Functional
+
 users shall be able to deposit their valuables to a storage
 
 Users shall be able to specify a secure password for their storage
@@ -6,6 +8,31 @@ Users can only access to the contents of a storage by correctly entering their p
 
 Users shall be able to only reset their password using a secure key
 
+User should enter the volume of the valuables
+
+System shall if there is enough storage for deposit
+
+System shall suggest the minimum storage space based on the volume entered
+
+User can accept or ask for larger volume storage
 
 
 
+
+Non Functional
+User password should adhere to strong password rules
+
+Key should adhere to strong password rules
+Key can not be same with password
+
+
+
+Appendix
+
+Strong password rules are
+ 
+- at least 10 characters (and up to 100 characters)
+- 5 or more unique characters
+- at least 3 of the following: uppercase, lowercase, numeric, or special characters.  
+    The allowed special characters are ~ ! @ # $ % ^ * - _ = + [ { ] } / ; : , . ? 
+- can not contain spaces
