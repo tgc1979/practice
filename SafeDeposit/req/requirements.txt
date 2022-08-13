@@ -1,20 +1,30 @@
 Functional
 
-users shall be able to deposit their valuables to a storage
+Users shall be deposit their valuables to a storage
+
+Users shall be able to withdraw their valuables from a storage
 
 Users shall be able to specify a secure password for their storage
 
-Users can only access to the contents of a storage by correctly entering their password
+Users shall access only their storage.
+
+Users shall register to SafeDeposit sytem prior to deposit to the storage.
+
+Users shall provide aprroximate volume they intent to allocate from SafeDeposit system.
+
+
+Users shall provide a password and user name during registration process. 
+
+Password shall adhere to NIST 800-53 secure password guideline.
+
+Access to storage shall be via login terminal. 
 
 Users shall be able to only reset their password using a secure key
 
-User should enter the volume of the valuables
 
-System shall if there is enough storage for deposit
+System shall provide the storage are that satisfies volume requirements for the user.
 
-System shall suggest the minimum storage space based on the volume entered
-
-User can accept or ask for larger volume storage
+User shall ask for more storage from the system.
 
 
 
