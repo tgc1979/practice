@@ -1,48 +1,72 @@
-Functional
-
-Users shall be deposit their valuables to a storage
-
-Users shall be able to withdraw their valuables from a storage
-
-Users shall be able to specify a secure password for their storage
-
-Users shall access only their storage.
-
-Users shall register to SafeDeposit sytem prior to deposit to the storage.
-
-Users shall provide aprroximate volume they intent to allocate from SafeDeposit system.
+Overview
+=========================================================================================
+SafeDeposit system provides infrastructure that enables users to deposit and withdraw their valuable items.
+System consists of storage units with 3 different volume offerings. 
+During registration , user specifies the volume and duration they request and charged
+based on these parameters. Access to storage units are password protected.System will notify users to renew their lease before expiration.
+If a lease expires , contents of the storage units are discarded.Safe deposit system has to be fault tolerant and support reliable operation 
+in the event of power loss for at least XX hours.
 
 
-Users shall provide a password and user name during registration process. 
-
-Password shall adhere to NIST 800-53 secure password guideline.
-
-Access to storage shall be via login terminal. 
-
-Users shall be able to only reset their password using a secure key
-
-
-System shall provide the storage are that satisfies volume requirements for the user.
-
-User shall ask for more storage from the system.
+Abbrevations
+=========================================================================================
+(SD) : SafeDeposit
 
 
 
-
-Non Functional
-User password should adhere to strong password rules
-
-Key should adhere to strong password rules
-Key can not be same with password
+Functional Requirements
+=========================================================================================
 
 
+SafeDeposit system shall provide storage units to the registered users.
 
-Appendix
+Users shall be able to deposit to storage units.
 
-Strong password rules are
- 
-- at least 10 characters (and up to 100 characters)
-- 5 or more unique characters
-- at least 3 of the following: uppercase, lowercase, numeric, or special characters.  
-    The allowed special characters are ~ ! @ # $ % ^ * - _ = + [ { ] } / ; : , . ? 
-- can not contain spaces
+Users shall be able to withdraw from storage units.
+
+SD System shall offer largest minimum volume of storage unit that satisfies user`s request.
+
+Users shall opt for larger storage  units.
+
+Storage unit doors shall be locked/unlocked with a unit ID and password combination.
+
+Storage unit doors shall be locked/unlocked with  unit ID and master password combination.
+
+Only SD staff with admin privillige shall access to Master password.
+
+Unit  ID and password shall be entered via a terminal unit with in the immediae vicinity of storage unit area.
+
+Terminal unit shall have a display.
+
+When a storage unit is accessed , terminal unit shall display the information about the lease expire day regarding given storage unit.
+
+SD system shall reminder  user`s for renewal the lease.
+
+Expired leases shall be terminated by removing the contents of the storage area for safe disposal.
+
+SD system shall provide 24 hours phone support
+
+In the event of a power loss SD system shall remain fully functional at least for TBD hours.
+
+Terminal unit software shall support OTA.
+
+SD system shall keep record operational metrics such as capacity  , available storage units ,  lease times  , storage unit access history, TBD
+
+SD admin privilage shall be able to retrieve operational metric reports.
+
+SD admin shall access to report using modern web browser.
+
+
+Non functional Requirements
+=========================================================================================
+
+Disposal of items shall adhere to TBD.
+
+Password shall adhere to NIST 800-53 guideline.
+
+Terminal unit shall support TBD languages.
+
+
+
+
+
