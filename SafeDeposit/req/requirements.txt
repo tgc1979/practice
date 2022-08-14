@@ -1,7 +1,8 @@
-Overview
+System Overview
 =========================================================================================
 SafeDeposit system provides infrastructure that enables users to deposit and withdraw their valuable items.
-System consists of storage units with 3 different volume offerings. 
+System consists of storage units with 3 different volume offerings.
+ 
 During registration , user specifies the volume and duration they request and charged
 based on these parameters. Access to storage units are password protected.System will notify users to renew their lease before expiration.
 If a lease expires , contents of the storage units are discarded.Safe deposit system has to be fault tolerant and support reliable operation 
@@ -24,7 +25,7 @@ Users shall be able to deposit to storage units.
 
 Users shall be able to withdraw from storage units.
 
-SD System shall offer largest minimum volume of storage unit that satisfies user`s request.
+SD System shall offer minimum storage volume that satisfies user`s request.
 
 Users shall opt for larger storage  units.
 
@@ -34,13 +35,15 @@ Storage unit doors shall be locked/unlocked with  unit ID and master password co
 
 Only SD staff with admin privillige shall access to Master password.
 
-Unit  ID and password shall be entered via a terminal unit with in the immediae vicinity of storage unit area.
+Unit ID and password shall be entered via a terminal unit within the immediae vicinity of storage unit area.
 
 Terminal unit shall have a display.
 
 When a storage unit is accessed , terminal unit shall display the information about the lease expire day regarding given storage unit.
 
-SD system shall reminder  user`s for renewal the lease.
+SD system shall sent notifications to user`s for renewing their lease before expiration.
+
+Notifications shall be sent via email and text messages.
 
 Expired leases shall be terminated by removing the contents of the storage area for safe disposal.
 
@@ -52,11 +55,17 @@ Terminal unit software shall support OTA.
 
 SD system shall keep record operational metrics such as capacity  , available storage units ,  lease times  , storage unit access history, TBD
 
-SD admin privilage shall be able to retrieve operational metric reports.
+SD admin shall be able to retrieve operational metric reports via a web browser.
 
-SD admin shall access to report using modern web browser.
+SD System shall support adding new storage units.
 
+SD system shall support removing existing storage units. Removing a storage unit shall require a comment.
 
+All the interactions with SD system between users and admin shall be recorded on SD system server as system log.
+
+System logs shall be backed up private cloud.
+
+ 
 Non functional Requirements
 =========================================================================================
 
